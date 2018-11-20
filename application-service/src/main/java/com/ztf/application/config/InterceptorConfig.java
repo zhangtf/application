@@ -7,9 +7,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 /**
  * 拦截器配置
+ * @author zhangtf
+ * @createTime 2018-11-11 11:11:11
  */
 @Component
 public class InterceptorConfig extends WebMvcConfigurationSupport {
+    /**
+     * 测试拦截器
+     */
     @Override
     protected void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new TestInterceptor()).addPathPatterns("/test/**").excludePathPatterns("/test/insert");

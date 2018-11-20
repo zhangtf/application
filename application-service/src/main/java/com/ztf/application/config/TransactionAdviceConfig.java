@@ -13,6 +13,11 @@ import org.springframework.transaction.interceptor.DefaultTransactionAttribute;
 import org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource;
 import org.springframework.transaction.interceptor.TransactionInterceptor;
 
+/**
+ * 事务配置
+ * @author zhangtf
+ * @createTime 2018-11-11 11:11:11
+ */
 @Aspect
 @Configuration
 public class TransactionAdviceConfig {

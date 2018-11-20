@@ -10,8 +10,11 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
+/**
+ * 测试Service实现类
+ * @author zhangtf
+ * @createTime 2018-11-11 11:11:11
+ */
 @Service("userService")
 public class UserServiceImpl implements UserService {
 

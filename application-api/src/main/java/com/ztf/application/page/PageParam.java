@@ -2,6 +2,11 @@ package com.ztf.application.page;
 
 import com.github.pagehelper.IPage;
 
+/**
+ * 分页参数
+ * @author zhangtf
+ * @createTime 2018-11-11 11:11:11
+ */
 public class PageParam implements IPage {
 
     private Integer pageNum;

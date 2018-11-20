@@ -3,6 +3,11 @@ package com.ztf.application.model;
 import java.io.Serializable;
 import java.sql.Timestamp;
 
+/**
+ * 测试model
+ * @author zhangtf
+ * @createTime 2018-11-11 11:11:11
+ */
 public class User implements Serializable {
 
     private static final long serialVersionUID = -8918079271308353596L;
