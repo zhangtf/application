@@ -52,6 +52,11 @@
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectj.version}</version> <!--可以查查最新版-->
         </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.6</version>
+        </dependency>
     </dependencies>
 
     <profiles>
@@ -69,7 +74,8 @@
         </profile>
     </profiles>
     <build>
-        <resources>
+
+    <resources>
             <resource>
                 <filtering>true</filtering>
                 <directory>src/main/resources</directory>
@@ -105,6 +111,10 @@
                 <version>3.1.0</version>
                 <configuration>
                     <useDefaultDelimiters>true</useDefaultDelimiters>
+                    <nonFilteredFileExtensions>
+                        <nonFilteredFileExtension>crt</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>pfx</nonFilteredFileExtension>
+                    </nonFilteredFileExtensions>
                 </configuration>
             </plugin>
             <plugin>
